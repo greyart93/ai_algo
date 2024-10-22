@@ -64,6 +64,7 @@ This function implements the recursive version of the Best-First Search algorith
 - It calls the `recursive_best_first_search` function with the initial parameters and starts the search.
 ---
 <br>
+
 6. ### `Execution:`
 
 > - The code calls the `best_first_search function` with the `Graph_nodes` graph, the `source` node `'S'`, and the `target` node `'G'`.
