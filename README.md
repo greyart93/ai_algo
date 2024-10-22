@@ -73,3 +73,61 @@ This function implements the recursive version of the Best-First Search algorith
 <br>
 
 for more details: <https://zzzcode.ai/python/code-explain?id=c418ff37-1572-416b-8a4d-19993106c1f4>
+
+# calculations:,
+ Start state: S
+- From 'S' we can go to 'A' and 'g'
+
+- For S -> A:  f(n) => g(n) + h(n)
+                   => 1 + 3 
+                   => 4
+ 
+- For S -> g: f(n) => g(n) + h(n)
+                  => 10 + 0
+                  => 10
+
+- We see that the path with less f(n) is S -> A
+- So hold S -> g , and let h1 = 10
+
+- From 'A' we can go to 'B' and 'C'
+- For S -> A -> B: f(n) = g(n) + h(n)
+                       => 3 + 4
+                       => 7
+
+- For S -> A -> C: f(n) = g(n) + h(n)
+                       => 2 + 2
+                       => 4
+
+- By comparing both f(n), we see that the path S -> A -> C has less f(n)
+- So, hold S -> A -> B, and let h2 = 7
+
+- From 'C' we can go to 'D' and 'g':
+- For S -> A -> C -> D: f(n) = g(n) + h(n)
+                            => 5 + 6
+                            => 11
+
+
+- For S -> A -> C -> g: f(n) = g(n) + h(n)
+                             => 6 + 0 
+                             => 6
+
+- By comparing both f(n), we see that the path  S -> A -> C -> g has less f(n)
+- So, hold S -> A -> C -> D, let h3 = 11
+
+- we have reached our final destination node or goal node
+- so let x = f(n) for S -> A -> C -> g
+- we check whether any holded f(n) is less than x
+- therefore,
+  
+h1 < x
+=> 10 < 6 => false
+
+h2 < x
+=> 7  < 6 => false
+
+h3 < x
+=> 11  < 6 => false
+
+- Therefore, the optimal path is S -> A -> C -> g
+             and the path cost is 6
+ 
