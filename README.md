@@ -69,3 +69,6 @@ This function implements the recursive version of the Best-First Search algorith
 
 > - The code calls the `best_first_search function` with the `Graph_nodes` graph, the `source` node `'S'`, and the `target` node `'G'`.
 
+<br>
+
+for more details: <https://zzzcode.ai/python/code-explain?id=c418ff37-1572-416b-8a4d-19993106c1f4>
