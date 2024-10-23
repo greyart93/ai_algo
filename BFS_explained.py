@@ -1,4 +1,8 @@
+# open this code in python compiler
+# https://www.sololearn.com/en/compiler-playground/cm1sw6BN03xn
+
 # bfs V1   check v2 its good
+
 def bfs(graph, start):
     visited = set()
     queue = []
