@@ -12,6 +12,8 @@ Time Complexity: O(b^d)
 ## IBFS (Iterative Deepening Breadth-First Search):
 Time Complexity: O(b^d)
 (combines the space efficiency of DFS with the optimality of BFS)
+b: This represents the branching factor, which is the average number of children (or successors) each node has in the search tree.
+d: This is the depth of the shallowest goal node, meaning the length of the path from the root node to the nearest goal node.
 
 ## IDFS (Iterative Deepening Depth-First Search):
 Time Complexity: O(b^d)
