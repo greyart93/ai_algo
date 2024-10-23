@@ -1,6 +1,57 @@
-## quick review: <https://excalidraw.com/#json=yHsjyn_at8jhO5O_-nNez,tKSX3kQ7fyfgVbTr0UYyKg>
+### quick review: <https://excalidraw.com/#json=yHsjyn_at8jhO5O_-nNez,tKSX3kQ7fyfgVbTr0UYyKg>
+
+
+# bfs
+
+BFS: for graph traversal
+- take graph, start_vertex
+
+- make a visited list or set to keep track of visited nodes
+- make a queue list to keep track of the nodes orders
+
+- put the start node in queue
+
+- while the queue is not empty run the following:
+- let n = front node of the queue i.e. 1st element in queue
+- pop the front node from the queue
+
+- check if n is in visited list or not
+- if no then add n into visited list and print n
+
+- let neighbors = neighbors nodes of n 
+- for each neighbor of n do:
+- if the neighbor is not in visited list add them in queue list so that they we can pop it and visit it
+
+- done
+
+
+# BFS: for graph traversal
+- take graph, start_vertex
+
+- make a visited list or set to keep track of visited nodes
+- make a queue list to keep track of the nodes orders
+
+- put the start node in visited
+- put the start node in queue
+
+- while the queue is not empty run the following:
+- let n = front node of the queue i.e. 1st element in queue
+- pop the front node from the queue
+
+- check if n is in visited list or not
+- if no then add n into visited list and print n
+
+- let neighbors = neighbors nodes of n 
+- for each neighbor of n do:
+- if the neighbor is not in visited list add them in queue list so that they we can pop it and visit it
+- and add the neighbor in visited list also
+- done
+
+
+
+
 # recursive_best-first_search
-## This code implements the Recursive-Best-First Search (BFS) algorithm to find the optimal path from a given source node to a target node in a graph.
+##  Recursive-Best-First Search (BFS) algorithm to find the optimal path from a given source node to a target node in a graph.
 
 ## Theory:
 - The Best-First Search algorithm is a heuristic-based search algorithm that explores the graph by always selecting the node that appears to be closest to the target based on the heuristic function (the `H_dist` dictionary in this case). 
