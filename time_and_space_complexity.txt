@@ -1,0 +1,75 @@
+time complexity of bfs, dfs, ibfs, idfs, astar, recursive best-first search
+
+
+BFS (Breadth-First Search):
+Time Complexity: O(b^d)
+(where b is the branching factor and d is the depth of the shallowest goal)
+
+DFS (Depth-First Search):
+Time Complexity: O(b^d)
+(the same as BFS in terms of the worst-case scenario)
+
+## IBFS (Iterative Deepening Breadth-First Search):
+Time Complexity: O(b^d)
+(combines the space efficiency of DFS with the optimality of BFS)
+
+## IDFS (Iterative Deepening Depth-First Search):
+Time Complexity: O(b^d)
+(also combines space efficiency with the completeness of BFS)
+
+## A Search*:
+Time Complexity: O(b^d) in the worst case; depends on the heuristic used
+(if the heuristic is admissible and consistent, it is optimal)
+
+## Recursive Best-First Search (RBFS):
+Time Complexity: O(b^d) in the worst case; generally better than A* in terms of space usage
+(it uses linear space but can still explore the same number of nodes)
+
+Each algorithm's performance can vary based on the specific problem and structure of the search space.
+
+
+
+# time and space complexities for each of the specified search algorithms:
+
+## BFS (Breadth-First Search):
+
+Time Complexity: O(b^d)
+Space Complexity: O(b^d)
+(stores all nodes at the current depth)
+
+## DFS (Depth-First Search):
+
+Time Complexity: O(b^d)
+Space Complexity: O(d)
+(stores only the nodes along the current path)
+
+
+## IBFS (Iterative Deepening Breadth-First Search):
+
+Time Complexity: O(b^d)
+Space Complexity: O(b * d)
+(space is linear in terms of depth due to storing nodes in layers)
+
+
+## IDFS (Iterative Deepening Depth-First Search):
+
+Time Complexity: O(b^d)
+Space Complexity: O(d)
+(similar to DFS, storing only nodes along the current path)
+
+
+ A Search*:
+
+Time Complexity: O(b^d) in the worst case; generally more efficient with a good heuristic
+Space Complexity: O(b^d)
+(stores all generated nodes for evaluation)
+
+
+## Recursive Best-First Search (RBFS):
+
+Time Complexity: O(b^d) in the worst case; better than A* in practice with good heuristics
+Space Complexity: O(d)
+(stores only the nodes along the current path and the best alternative)
+
+
+These complexities indicate the efficiency and resource requirements of each algorithm in various scenarios.
