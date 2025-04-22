@@ -33,3 +33,9 @@ if fvalue > critical_value:
    print("Reject H0: There is a significant difference between at least two groups.")
 else:
    print("Fail to reject H0: There is no significant difference between the groups.")
+
+# Perform post-hoc test (Tukey's HSD)
+m_comp = pairwise_tukeyhsd(df['headache'], df['group'], alpha=0.05)
+print("\nTukey's HSD Post-Hoc Test:")
+print(m_comp)
+
